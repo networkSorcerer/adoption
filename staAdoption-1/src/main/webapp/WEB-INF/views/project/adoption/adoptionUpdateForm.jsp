@@ -5,7 +5,7 @@
   <div class="container">
     <div class = "text-center"><h1>입양 공고 수정 화면</h1></div>
     <form action="/update" method="post" id="f_updateForm">
-    	<input type="hidden" id="adoptionNumber" name="adoptionNumber" value="${updateData.adoptionId }" id="adoptionId">
+    	<input type="hidden" id="adoptionId" name="adoptionId" value="${updateData.adoptionId }" id="adoptionId">
     	<input type="hidden" id="adoptionFile" name="adoptionFile" value="${updateData.adoptionFile }"/>
       		<div class ="text-center">
       		<table class="table table-striped">
