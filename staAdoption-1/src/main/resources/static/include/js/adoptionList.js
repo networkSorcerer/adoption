@@ -15,7 +15,7 @@ $(function(){
 	
 	
 	$("#insertFormBtn").on("click", ()=>{
-		location.href = "/adoption/adoptionWriteForm";
+		location.href = "/adoption/writeForm";
 	});
 	
 	

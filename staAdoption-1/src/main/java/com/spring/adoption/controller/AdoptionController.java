@@ -53,22 +53,22 @@ public class AdoptionController {
 		return "redirect:/adoption/adoptionList";
 	}
 	
-	@GetMapping(value="/adoptionWriteForm")
+	@GetMapping(value="/writeForm")
 	public String adoptionWriteForm() {
 		log.info("writeForm 호출 성공");
 		
-		return "project/adoption/adoptionWriteForm"; //  /WEB-INF/views/client/board/writeForm.jsp
+		return "project/adoption/writeForm"; //  /WEB-INF/views/client/board/writeForm.jsp
 	}
 	
-	@GetMapping(value="/adoptionUpdateForm")
-	public String adoptionUpdateForm(@ModelAttribute AdoptionVO adoptionvo, Model model) {
+	@GetMapping(value="/updateForm")
+	public String updateForm(@ModelAttribute AdoptionVO adoptionvo, Model model) {
 		log.info("updateForm 호출 성공");
 		log.info("adoptionId = " + adoptionvo.getAdoptionId());
 		
-		AdoptionVO updateData = adoptionService.adoptionUpdateForm(adoptionvo);
+		AdoptionVO updateData = adoptionService.updateForm(adoptionvo);
 		
 		model.addAttribute("updateData", updateData);
-		return "project/adoption/adoptionUpdateForm";
+		return "project/adoption/updateForm";
 	}
 	
 	@PostMapping("/adoptionUpdate")

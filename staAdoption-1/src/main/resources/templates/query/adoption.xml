@@ -11,6 +11,7 @@
 		<result column="adoption_level" property="adoptionLevel"/>
 		<result column="adoption_file" property="adoptionFile"/>
 		<result column="adoption_passwd" property="aoptionPasswd"/>
+		<result column="admin_id" property="adminId"/>
 	</resultMap>
 	
 	<select id="adoptionList" parameterType="adoption" resultMap="adoptionMap">

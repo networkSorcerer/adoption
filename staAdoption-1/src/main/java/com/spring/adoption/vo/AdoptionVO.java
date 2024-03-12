@@ -19,7 +19,7 @@ public class AdoptionVO extends CommonVO{
 	private String adoptionStatus="";
 	private String adoptionLevel="";
 	private String adoptionPasswd="";
-	
+	private String adminId;
 
 	
 	private MultipartFile file;

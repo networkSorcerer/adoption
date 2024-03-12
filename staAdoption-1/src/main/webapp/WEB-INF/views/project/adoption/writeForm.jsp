@@ -65,7 +65,7 @@
                 <button type="button" class="btn btn-success" id="adoptionListBtn">목록</button>
         </div>
     </div>
-    <script src="/resources/include/js/adoptionWriteForm.js"></script>
+    <script src="/resources/include/js/writeForm.js"></script>
     <script>
     $(function(){
     	let errorMsg = "${errorMsg}";

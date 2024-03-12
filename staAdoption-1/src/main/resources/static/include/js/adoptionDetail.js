@@ -98,7 +98,7 @@ $(function(){
 				}else if (resultData == "일치") {
 					$("#message").text("");
 					if(buttonCheck=="updateButton") {
-						actionProcess("get", "/adoption/adoptionUpdateForm");
+						actionProcess("get", "/adoption/updateForm");
 					}else if (buttonCheck=="deleteButton") {
 						if(confirm("정말 삭제하시겠습니까?")) {
 							actionProcess("post", "/adoption/adoptionDelete");
@@ -110,7 +110,7 @@ $(function(){
 	});
 	
 	$("#insertFormBtn").click(function(){
-		location.href = "/adotion/adoptionWriteForm";
+		location.href = "/adoption/writeForm";
 	});
 	
 	$("#adoptionListBtn").click(function(){

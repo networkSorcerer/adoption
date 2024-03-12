@@ -81,6 +81,6 @@
     	<button type="button" id="adoptionListBtn" class="btn btn-success btn-sm">목록</button>
     </div>
   </div>
-  <script src="/resources/include/js/adoptionUpdateForm.js"></script>
+  <script src="/resources/include/js/updateForm.js"></script>
 </body>
 </html>

@@ -60,7 +60,7 @@ public class AdoptionServiceImpl implements AdoptionService{
 	
 	//수정 폼 구현
 		@Override
-		public AdoptionVO adoptionUpdateForm(AdoptionVO adoptionvo) {
+		public AdoptionVO updateForm(AdoptionVO adoptionvo) {
 			AdoptionVO updateData = null;
 			updateData = adoptionDAO.adoptionDetail(adoptionvo);
 			return updateData;
@@ -98,6 +98,11 @@ public class AdoptionServiceImpl implements AdoptionService{
 			result = adoptionDAO.adoptionDelete(adoptionvo);
 			return result;
 		}
+
+
+
+
+	
 
 
 
